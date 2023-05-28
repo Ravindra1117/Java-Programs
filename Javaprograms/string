@@ -1,0 +1,54 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // Create a string
+        String message = "Hello, World!";
+        
+        // Get the length of the string
+        int length = message.length();
+        System.out.println("Length: " + length);
+        
+        // Access individual characters
+        char firstChar = message.charAt(0);
+        System.out.println("First character: " + firstChar);
+        
+        // Concatenate strings
+        String name = "Alice";
+        String greeting = "Hello, " + name + "!";
+        System.out.println(greeting);
+        
+        // Compare strings
+        String str1 = "apple";
+        String str2 = "banana";
+        
+        int result = str1.compareTo(str2);
+        if (result < 0) {
+            System.out.println(str1 + " comes before " + str2);
+        } else if (result > 0) {
+            System.out.println(str2 + " comes before " + str1);
+        } else {
+            System.out.println(str1 + " and " + str2 + " are equal");
+        }
+        
+        // Split a string
+        String sentence = "This is a sample sentence";
+        String[] words = sentence.split(" ");
+        System.out.println("Words:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+        
+        // Replace characters
+        String replaced = message.replace("o", "e");
+        System.out.println("Replaced: " + replaced);
+        
+        // Convert to uppercase and lowercase
+        String uppercase = message.toUpperCase();
+        String lowercase = message.toLowerCase();
+        System.out.println("Uppercase: " + uppercase);
+        System.out.println("Lowercase: " + lowercase);
+        
+        // Check if a string contains a substring
+        boolean contains = message.contains("World");
+        System.out.println("Contains 'World': " + contains);
+    }
+}
